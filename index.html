@@ -12,13 +12,7 @@
 </head>
 
 <body>
-    <script>
-let sortable = Sortable.create(list, {
-    group: "list",
-    animation: 100
-});
 
-    </script>
     <div class="list">
         <div class="item">First1</div>
         <div class="item">Second</div>
@@ -32,7 +26,13 @@ let sortable = Sortable.create(list, {
             </div>
         </div>
     </header>
-
+    <script>
+        let sortable = Sortable.create(list, {
+            group: "list",
+            animation: 100
+        });
+        
+            </script>
 </body>
 
 </html>
