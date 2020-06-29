@@ -8,60 +8,47 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="common.css">
-    <script type="text/javascript" src="Sortable.min.js"></script>
     <script type="text/javascript" src="common.js"></script>
 </head>
 
 <body>
-
-    <div class="hoge">
-        <div class="item">First1</div>
-        <div class="item">Second2</div>
-        <div class="item">Third</div>
-        <div class="item">Fourth</div>
-    </div>
-    <header>
-        <div class="container">
-            <div class="header-right">
-                <a href="dest">レッスン</a>
-            </div>
-        </div>
-    </header>
-
-    <ul id="hoge">
-        <li data-id="1">element 1</li>
-        <li data-id="2">element 2</li>
-        <li data-id="3">element 3</li>
-    </ul>
-
-<ul id="sample1" class="samplelist">
- 	<li>これで、並べ替えができる</li>
- 	<li>様になっている</li>
- 	<li>はずなんだ。</li>
-</ul>
-
-
-    <script>
-        let sortable = Sortable.create(list, {
-            group: "list",
-            animation: 100
+    <style>
+        body {
+          margin: 10px;
+        }
+        #listWithHandle div {
+          float: left;
+          margin-left: 5px;
+          width: 100px;
+          height: 100px;
+          border: 1px solid #00A5E3;
+          font-size: 24px;
+          text-align: center;
+        }
+        #listWithHandle div:hover {
+          cursor: move;
+        }
+      </style>
+      
+      <div id="listWithHandle">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+        <div>07</div>
+        <div>08</div>
+        <div>09</div>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="Sortable.min.js"></script>
+      <script>
+        $(function(){
+          Sortable.create(listWithHandle);
         });
-
-
-        Sortable.create(hoge, {
-            group: "save",
-            store: {
-                get: function (sortable) {
-                    var order = localStorage.getItem(sortable.options.group.name);
-                    return order ? order.split('|') : [];
-                },
-                set: function (sortable) {
-                    var order = sortable.toArray();
-                    localStorage.setItem(sortable.options.group.name, order.join('|'));
-                }
-            }
-        });
-    </script>
+      </script>
 </body>
 
 </html>
