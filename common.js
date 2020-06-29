@@ -7,5 +7,6 @@ $(function () {
 });
 
 $('#double').on('click', function () {
-    $(this).css('pointer-events','none');
-  });
+    $(this).css('pointer-events', 'none');
+    $(this).css('readonly', true);
+});
