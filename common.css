@@ -21,3 +21,20 @@
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
 }
+
+#button {
+  background-color: #3169d1;
+  border: 2px solid #3169d1;
+  color: #fff !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+#button:hover {
+  background-color: transparent;
+  border: 2px solid #998bfa;
+  color: #998bfa !important;
+  border-radius: 30px;
+}
