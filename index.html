@@ -13,11 +13,10 @@
 
 <body>
     <script>
-        $(function () {
-
-            Sortable.create($('.list')[0]);
-
-        });
+let sortable = Sortable.create(list, {
+    group: "list",
+    animation: 100
+});
 
     </script>
     <div class="list">
