@@ -19,6 +19,6 @@ $('#check').change(function() {
         $('#button').prop('disabled', false);
     } else { 
         // ボタンを無効化
-        $('#button').prop('disabled', false); 
+        $('#button').prop('disabled', true); 
     }
 });
