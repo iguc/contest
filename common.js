@@ -22,3 +22,10 @@ $('#check').change(function() {
         $('#button').prop('disabled', true); 
     }
 });
+
+
+
+  $("#check").on("click", function(){
+    var v = $(this).val();
+    sessionStorage.setItem('key', v);
+  });
