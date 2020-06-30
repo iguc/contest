@@ -33,9 +33,9 @@ $("#check").on("click", function () {
 $(function () {
     $("check").click(function () {
         if (this.checked) {
-            $("button").html("<button id='button' disabled='true' value='送信する' onclick='location.href='dest''>送信</button>");
+            $("button").html("<button id='button' disabled='true' value='送信する' onclick='location.href='dest''>送信する？</button>");
         } else {
-            $("button").html("送信");
+            $("button").html("送信しない");
         }
     });
 });
