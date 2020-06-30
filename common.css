@@ -4,7 +4,9 @@
   -ms-user-select: none;
   user-select: none;
 
-  background-color: #3169d1;
+
+  width: 300px;
+  background-color: #998bfa;
   color: #fff !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
