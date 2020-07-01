@@ -220,8 +220,8 @@ body {
   opacity: 0;
 }
 .message {
-  height: 20px;
-  width: 20px;
+  height: 200px;
+  width: 200px;
   display: block;
   float: left;
   margin: 10px 9px 10px 10px;
