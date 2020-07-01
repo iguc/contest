@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sand2</title>
     <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="common2.scss">
 </head>
 
 <body>
-    <div class="list">
-        <div class="item">First1</div>
-        <div class="item">Second</div>
-        <div class="item">Third</div>
-    </div>
-
-    <!-- <input type="submit" id="double" value="送信する" onclick="location.href='dest'"> -->
-
-    <input id="check" type="checkbox" />確定！<br>
-    <button id="button" disabled="true" value="送信する" onclick="location.href='dest'">送信す！</button>
+    <!-- No spacing due to whitespace bug in Chrome. -->
+<div class="card">
+    <label class="radio"><input id="radio1" type="radio" name="radios" checked><span class="outer"><span class="inner"></span></span>Robert Baratheon</label>
+    <label class="radio"><input id="radio2" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Rhaegar Targaryen</label>
+    <label class="radio"><input id="radio3" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Lyanna Stark</label>
+    <label class="radio"><input id="radio4" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Tywin Lannister</label>
+    <label class="radio"><input id="radio5" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Jon Arryn</label>
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
