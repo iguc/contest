@@ -105,7 +105,8 @@
   }
 } */
 @keyframes cardEnter {
-   0%, 20%, 40%, 60%, 80%, 100% {
+   /* 0%, 20%, 40%, 60%, 80%, 100% { */
+    0%, 100% {
     /* -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); */
             transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   } 
@@ -114,7 +115,7 @@
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
-  20% {
+  /* 20% {
     -webkit-transform: scale3d(0.5, 0.5, 0.5);
     transform: scale3d(0.5, 0.5, 0.5);
   }
@@ -130,7 +131,7 @@
   80% {
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
     transform: scale3d(0.97, 0.97, 0.97);
-  }
+  } */
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
