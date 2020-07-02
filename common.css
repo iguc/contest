@@ -145,7 +145,7 @@ body {
   background-color: #0c70b4;
   color: #546775;
   font: normal 400 18px "PT Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
 }
 
 /* Container
@@ -161,6 +161,9 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   margin: 20px auto;
   opacity: 0;
+  position: relative;
+  top: 30px;
+  left: 30px;
 }
 
 /* Individual Controls
