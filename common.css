@@ -166,14 +166,16 @@ body {
 /* Individual Controls
  ------------------------------------------------------------- */
 .radio {
-  display: inline-block;
+  display: block;
   padding-right: 20px;
   font-size: 18px;
   line-height: 49px;
   cursor: pointer;
+  position: relative;
+  top: 30px;
+  left: 30px;
 }
 .radio:hover .inner {
-  -webkit-transform: scale(0.5);
   transform: scale(0.5);
   opacity: 0.5;
 }
@@ -183,7 +185,6 @@ body {
   opacity: 0;
 }
 .radio input:checked + .outer .inner {
-  -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
@@ -191,7 +192,6 @@ body {
   border: 3px solid #f08b3b;
 }
 .radio input:focus + .outer .inner {
-  -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
   background-color: #e67012;
@@ -226,4 +226,7 @@ body {
   border: 3px solid #0c70b4;
   border-radius: 50%;
   background-color: #fff;
+  position: relative;
+  top: 30px;
+  left: 30px;
 }
