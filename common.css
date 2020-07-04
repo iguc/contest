@@ -1,24 +1,14 @@
 .item {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-
-
   width: 100px;
   background-color: #998bfa;
   color: #fff !important;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* -webkit-transition: all .3s; */
   transition: all .3s;
   margin: 10px 0 0 0;
 }
 
 .item:hover {
-  -webkit-transform: translateY(-2px);
-  -ms-transform: translateY(-2px);
   transform: translateY(-2px);
 }
 
@@ -26,10 +16,7 @@
   background-color: #3169d1;
   border: 2px solid #3169d1;
   color: #fff !important;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -145,7 +132,6 @@ body {
   background-color: #0c70b4;
   color: #546775;
   font: normal 400 18px "PT Sans", sans-serif;
-  /* -webkit-font-smoothing: antialiased; */
 }
 
 /* Container
@@ -220,10 +206,9 @@ body {
 }
 .message {
   margin: 20px auto;
-
   display: block;
   font-size: 30px;
-    font-family: "Kokoro", cursive;
+  font-family: "Kokoro", cursive;
   border: 3px solid #992c6c;
   border-radius: 10%;
   background-color: #fff;
