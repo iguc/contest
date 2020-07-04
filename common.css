@@ -225,7 +225,7 @@ body {
   display: block;
   font-size: 18px;
   /* float: left; */
-  margin: 10px 9px 10px 10px;
+  margin: 20px auto;
   border: 3px solid #992c6c;
   border-radius: 10%;
   background-color: #fff;
