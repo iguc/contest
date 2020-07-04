@@ -4,22 +4,16 @@ body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
 }
-.item {
+.message {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   margin: 20px auto;
-  user-select: none;
-  width: 100px;
-  background-color: #998bfa;
-  color: #fff !important;
-  box-sizing: border-box;
-  transition: all 0.3s;
-  margin: 10px 0 0 0;
+  display: block;
+  font-size: 40px;
+  position: relative;
 }
-.item:hover {
-  transform: translateY(-2px);
-}
-#button {
-  margin: 20px auto;
-}
+
 @keyframes cardEnter {
   0%,
   100% {
@@ -49,8 +43,8 @@ body {
 .radio {
   display: block;
   padding-right: 20px;
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 50px;
   cursor: pointer;
 }
 .radio:hover .inner {
@@ -75,8 +69,8 @@ body {
   background-color: #e67012;
 }
 .radio .outer {
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   display: block;
   float: left;
   margin: 10px 9px 10px 10px;
@@ -86,8 +80,8 @@ body {
 }
 .radio .inner {
   transition: all 0.25s ease-in-out;
-  height: 16px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
   transform: scale(0);
   display: block;
   margin: 2px;
@@ -95,12 +89,22 @@ body {
   background-color: #f08b3b;
   opacity: 0;
 }
-.message {
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+#button {
   margin: 20px auto;
-  display: block;
-  font-size: 40px;
-  position: relative;
+  background-color: #fff;
+  font-size: 24px;
+}
+.item {
+  margin: 20px auto;
+  font-size: 50px;
+  user-select: none;
+  width: 100px;
+  background-color: #e67012;
+  color: #fff !important;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  margin: 10px 0 0 0;
+}
+.item:hover {
+  transform: translateY(-2px);
 }
