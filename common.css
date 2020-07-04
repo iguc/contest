@@ -220,10 +220,10 @@ body {
 }
 .message {
   margin: 20px auto;
-  height: 30px;
-  width: 200px;
+
   display: block;
-  font-size: 18px;
+  font-size: 30px;
+    font-family: "Kokoro", cursive;
   border: 3px solid #992c6c;
   border-radius: 10%;
   background-color: #fff;
