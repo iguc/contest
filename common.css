@@ -174,7 +174,7 @@ body {
   font-size: 18px;
   line-height: 49px;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
 }
 .radio:hover .inner {
   transform: scale(0.5);
@@ -219,6 +219,7 @@ body {
   opacity: 0;
 }
 .message {
+  margin: 20px auto;
   height: 30px;
   width: 200px;
   display: block;
