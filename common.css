@@ -1,3 +1,15 @@
+body {
+  background-color: #0c70b4;
+  color: #546775;
+
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
 .item {
   margin: 20px auto;
   user-select: none;
@@ -130,12 +142,6 @@
 }
 /* Foundation
  ------------------------------------------------------------- */
-body {
-  background-color: #0c70b4;
-  color: #546775;
-  font: normal 400 18px "PT Sans", sans-serif;
-}
-
 /* Container
  ------------------------------------------------------------- */
 .card {
