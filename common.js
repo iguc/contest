@@ -7,15 +7,10 @@ Sortable.create($(".list")[0], {
 
 
 $(function($) {
-  $('select').change(function(){ 
-    var text = $('option:selected').text();
-    console.log( text );
-    alert(text);
+  $('select').on('click', function() {
+    alert("hello");
   });
 });
-
-
-
   
 var animateButton = function (e) {
   e.preventDefault;
