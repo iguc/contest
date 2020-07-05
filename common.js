@@ -7,8 +7,9 @@ Sortable.create($(".list")[0], {
 
 
 $(function($) {
-  $('select').on('click', function() {
+  $('#rater').on('click', function() {
     alert("hello");
+    console.log("hello");
   });
 });
   
