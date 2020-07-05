@@ -5,13 +5,24 @@ body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
 }
-
+.step {
+  margin: 30px;
+}
 .item {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border:1px solid rgb(36, 32, 32);
+  border:1px solid #080808;
+  border-radius: 4px;
+  margin: 0 3px 3px 3px;
+  padding: 0.3em;
+  padding-left: 1em;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: move;
+
 }
 .sortable-chosen {
   color: #fff;
