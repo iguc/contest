@@ -7,7 +7,7 @@ Sortable.create($(".list")[0], {
 
 
 $(function($) {
-  $('#rater').on('click', function() {
+  $('#rater').change(function() {
     alert("helslo");
     console.log("hsello");
   });
