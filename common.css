@@ -143,11 +143,12 @@ small {
   }
 }
 .button {
+  pointer-events:none;
   display: inline-block;
   min-width: 150px;
   /* margin: 20px auto; */
-  background: #edb54c;
-  color: #fefefe;
+  background: #708090;
+  color: #696969	;
   font-size: 1.2em;
   padding: 1em;
   border-radius: 4px;

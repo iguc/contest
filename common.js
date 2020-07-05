@@ -8,9 +8,18 @@ Sortable.create($(".list")[0], {
 
 $(function($) {
   $('#rater').change(function() {
-    alert("a");
+    $('.button').css('background', '#3CB371');
+    $('.button').css('color', '#fefefe');
+    $('.button').css('pointer-events', 'auto');
   });
 });
+
+$(function($) {
+  $('.button').on('click', function() {
+    $('.button').text('');
+  });
+});
+
   
 var animateButton = function (e) {
   e.preventDefault;
@@ -21,6 +30,7 @@ var animateButton = function (e) {
 var classname = document.getElementsByClassName("button");
 for (var i = 0; i < classname.length; i++) {
   classname[i].addEventListener("click", animateButton, false);
+  
 };
 
 
