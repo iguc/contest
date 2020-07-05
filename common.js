@@ -6,7 +6,7 @@ Sortable.create($(".list")[0], {
 });
 
 
-$(function() {
+$(function($) {
   $('select').change(function(){ 
     var text = $('option:selected').text();
     console.log( text );
