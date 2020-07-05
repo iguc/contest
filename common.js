@@ -8,8 +8,7 @@ Sortable.create($(".list")[0], {
 
 $(function($) {
   $('#rater').change(function() {
-    alert("helslo");
-    console.log("hsello");
+    alert("a");
   });
 });
   
