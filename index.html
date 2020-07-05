@@ -45,8 +45,8 @@
     <p>２.あなた（審査員）の名前を選んでください</p>
     <div class="step">
       <div class="cp_ipselect cp_sl02">
-        <select name="rater" required>
-          <option value="" hidden>Choose</option>
+        <select id="rater" name="rater">
+          <option value="" hidden>＞</option>
           <option value="井岡">井岡</option>
           <option value="加本">加本</option>
           <option value="中井">中井</option>
@@ -68,6 +68,13 @@
           </button>
         </div>
       </div>
+      <script>
+       $(function(){
+         $('select').change(function() {
+            alert("hello")
+        });
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="Sortable.min.js"></script>
     <script src="common.js"></script>
