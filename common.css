@@ -1,10 +1,38 @@
 body {
-  background-color: #0c70b4;
-  color: #546775;
+  background-color: #eff0f2;
+  /* color: #546775; */
+  color: #080808;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
 }
-.message {
+
+.item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border:1px solid rgb(36, 32, 32);
+}
+.sortable-chosen {
+  color: #fff;
+  background-color: #edb54c;
+}
+.table { 
+  display: table;
+}
+.rank {
+  overflow:hidden;
+  width:20px;
+  height:8.4em;
+  /* display: inline-block; */
+  display: table-cell;
+}
+.list {
+  
+  /* display: inline-block; */
+  display: table-cell;
+}
+/* .message {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
@@ -12,9 +40,9 @@ body {
   display: block;
   font-size: 40px;
   position: relative;
-}
+} */
 
-@keyframes cardEnter {
+/* @keyframes cardEnter {
   0%,
   100% {
     transition-duration: 0.2s;
@@ -93,8 +121,8 @@ body {
   margin: 20px auto;
   background-color: #fff;
   font-size: 24px;
-}
-.item {
+} */
+/* .item {
   margin: 20px auto;
   font-size: 50px;
   user-select: none;
@@ -107,4 +135,61 @@ body {
 }
 .item:hover {
   transform: translateY(-2px);
+} */
+
+.cp_ipselect {
+  overflow: hidden;
+  width: 250px;
+	/* width: 90%; */
+	/* margin: 2em auto; */
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl02 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl02::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl02:after {
+	position: absolute;
+	top: 0;
+	right: 2.5em;
+	bottom: 0;
+	width: 1px;
+	content: '';
+	border-left: 1px solid #bbbbbb;
+}
+.cp_ipselect.cp_sl02 select {
+	padding: 8px 38px 8px 8px;
+	color: #666666;
 }
