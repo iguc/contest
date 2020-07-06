@@ -4,6 +4,14 @@
 // Sortable.create($(".list")[0], {
 //   animation: 110, // ミリ秒で指定
 // });
+
+$(function($) {
+  $('.box').on('click', function() {
+    $('.box').css('background', '#edb54c');
+  });
+});
+
+
 $(function($) {
   $('#rater').change(function() {
     $('.button').css('background', '#3CB371');
