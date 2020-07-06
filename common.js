@@ -52,7 +52,7 @@ $(function () {
 });
 
 
-$(function () {
+
   function put_result(ui) {
     $("#result_box").html("現在の要素のIDの順番は下記のとおりです。<br />");
 
@@ -67,7 +67,7 @@ $(function () {
       $("#result_box").append("ドラッグされた要素のIDは" + dragged_id + "です<br />");
     }
   }
-});
+
 // $('#datas').sortable({
 //   update: function(){
 //       var log = $(this).sortable("toArray");
