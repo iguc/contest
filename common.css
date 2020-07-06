@@ -67,7 +67,7 @@ p {
 /* .box:hover {
   background-color: #edb54c;
 } */
-.box .ui-sortable-helper {
+/* .box .ui-sortable-helper {
   border-top: solid 1px #edb54c;
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -75,9 +75,11 @@ p {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+} */
+
+.placeholder {
+  background-color: #edb54c;
 }
-
-
 
 .sortable-chosen {
   color: #fff;
