@@ -33,7 +33,7 @@ p {
 
 }
 
-.box {
+/* .box {
   width: 300px;
   margin: 20px auto;
   padding: 0;
@@ -63,12 +63,12 @@ p {
   color: #333;
   background-color: #fff;
   cursor: n-resize;
-}
+} */
 .box a:hover {
-  background-color: #eee;
+  background-color: #edb54c;
 }
 .box .ui-sortable-helper {
-  border-top: solid 1px #eee;
+  border-top: solid 1px #edb54c;
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
