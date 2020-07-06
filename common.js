@@ -1,9 +1,9 @@
-$(function () {
-  Sortable.create($(".list")[0]);
-});
-Sortable.create($(".list")[0], {
-  animation: 110, // ミリ秒で指定
-});
+// $(function () {
+//   Sortable.create($(".list")[0]);
+// });
+// Sortable.create($(".list")[0], {
+//   animation: 110, // ミリ秒で指定
+// });
 $(function($) {
   $('#rater').change(function() {
     $('.button').css('background', '#3CB371');

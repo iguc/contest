@@ -1,142 +1,152 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cチーム用特設サイト</title>
-    <link rel="stylesheet" type="text/css" href="common.css" />
-    <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/hot-sneaks/jquery-ui.css" /> -->
-	
-  </head>
 
-  <body>
-    <p>１.発表の評価順に並び替えてください</p>
-    <div class="step">
-      <div cless="table">
-        <div class="rank">
-          <div class="num">高</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">　</div>
-          <div class="num">低</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cチーム用特設サイト</title>
+  <link rel="stylesheet" type="text/css" href="common.css" />
+  <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/hot-sneaks/jquery-ui.css" /> -->
+
+</head>
+
+<body>
+  <p>１.発表の評価順に並び替えてください</p>
+  <div class="step">
+    <div cless="table">
+      <div class="rank">
+        <div class="num">高</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">低</div>
+      </div>
+
+      <!-- 並べ替える要素の一覧 -->
+      <div class="box" id="box">
+        <div id="box_1" class="item">
+          <div class="card-body">井岡</div>
         </div>
-        <div class="list" id="list">
+        <div id="box_2" class="item">
+          <div class="card-body">加本</div>
+        </div>
+        <div id="box_3" class="item">
+          <div class="card-body">中井</div>
+        </div>
+        <div id="box_4" class="item">
+          <div class="card-body">西村</div>
+        </div>
+        <div id="box_5" class="item">
+          <div class="card-body">藤井</div>
+        </div>
+        <div id="box_6" class="item">
+          <div class="card-body">三島</div>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="list" id="list">
           <div class="item">井岡</div>
           <div class="item">加本</div>
           <div class="item">中井</div>
           <div class="item">西村</div>
           <div class="item">藤井</div>
           <div class="item">三島</div>
-        </div>
-      </div>
+        </div> -->
     </div>
-    <p>２.あなた（審査員）の名前を選んでください</p>
-    <div class="step">
-      <div class="cp_ipselect cp_sl02">
-        <select id="rater" name="rater">
-          <option value="" hidden>＞</option>
-          <option value="井岡">井岡</option>
-          <option value="加本">加本</option>
-          <option value="中井">中井</option>
-          <option value="西村">西村</option>
-          <option value="藤井">藤井</option>
-          <option value="三島">三島</option>
-          <option value="後藤">後藤</option>
-          <option value="瀧花">瀧花</option>
-          <option value="有吉">有吉</option>
-          <option value="井口">井口</option>
-        </select>
-      </div>
+  </div>
+  <p>２.あなた（審査員）の名前を選んでください</p>
+  <div class="step">
+    <div class="cp_ipselect cp_sl02">
+      <select id="rater" name="rater">
+        <option value="" hidden>＞</option>
+        <option value="井岡">井岡</option>
+        <option value="加本">加本</option>
+        <option value="中井">中井</option>
+        <option value="西村">西村</option>
+        <option value="藤井">藤井</option>
+        <option value="三島">三島</option>
+        <option value="後藤">後藤</option>
+        <option value="瀧花">瀧花</option>
+        <option value="有吉">有吉</option>
+        <option value="井口">井口</option>
+      </select>
     </div>
-    <p>３.ボタンを押すと投票完了です</p>
-      <div class="wrapper">
-        <div class="block">
-          <button class="button success">
-            投票
-          </button>
-        </div>
-      </div>
-      
-
-<!-- 並べ替える要素の一覧 -->
-<div id="box">
-	<div id="box_1" class="card bg-primary text-white my-1">
-		<div class="card-body">id:box_1</div>
-	</div>
-	<div id="box_2" class="card bg-success text-white my-1">
-		<div class="card-body">id:box_2</div>
-	</div>
-	<div id="box_3" class="card bg-info text-white my-1">
-		<div class="card-body">id:box_3</div>
-	</div>
-	<div id="box_4" class="card bg-warning text-white my-1">
-		<div class="card-body">id:box_4</div>
-	</div>
-	<div id="box_5" class="card bg-danger text-white my-1">
-		<div class="card-body">id:box_5</div>
-	</div>
-</div>
+  </div>
+  <p>３.ボタンを押すと投票完了です</p>
+  <div class="wrapper">
+    <div class="block">
+      <button class="button success">
+        投票
+      </button>
+    </div>
+  </div>
 
 
-<!-- 要素の一覧を表示する部分 -->
-<div class="card mt-5">
-	<div id="result_box" class="card-body">
-	</div>
-</div>
 
-<!-- jQuery 3.1.0 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<!-- jQuery UI 1.12.1 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
-<script type="text/javascript">
-function put_result(ui){
-	$("#result_box").html("現在の要素のIDの順番は下記のとおりです。<br />");
-	
-	$("#box").find(".card").each(function(index, element){
-		var id = $(this).attr("id");
-		$("#result_box").append(id+"<br />");
-	});
+  <!-- 要素の一覧を表示する部分 -->
+  <div class="card mt-5">
+    <div id="result_box" class="card-body">
+    </div>
+  </div>
 
-	if(ui){ // もしドラッグ後であれば
-		// ドラッグされた要素のIDを取得
-		var dragged_id = ui.item[0].id;
-		$("#result_box").append("ドラッグされた要素のIDは"+dragged_id+"です<br />");
-	}
-}
-$(function(){
-	put_result();
-	$("#box").sortable({
-		axis: "y", // ドラッグの方向を縦に固定
-		"opacity": 0.5, // ドラッグ中の透明度
-		"update": function(event,ui){ // ドラッグ完了後のコールバック
-			put_result(ui);
-		}
-	});
+  <!-- jQuery 3.1.0 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-});
-</script>
+  <!-- jQuery UI 1.12.1 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
-  
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-    <!-- <script src="Sortable.min.js"></script> -->
-    <script src="common.js"></script>
+  <script type="text/javascript">
+    function put_result(ui) {
+      $("#result_box").html("現在の要素のIDの順番は下記のとおりです。<br />");
 
-    <!-- <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+      $("#box").find(".card").each(function (index, element) {
+        var id = $(this).attr("id");
+        $("#result_box").append(id + "<br />");
+      });
+
+      if (ui) { // もしドラッグ後であれば
+        // ドラッグされた要素のIDを取得
+        var dragged_id = ui.item[0].id;
+        $("#result_box").append("ドラッグされた要素のIDは" + dragged_id + "です<br />");
+      }
+    }
+    $(function () {
+      put_result();
+      $("#box").sortable({
+        axis: "y", // ドラッグの方向を縦に固定
+        "opacity": 0.5, // ドラッグ中の透明度
+        "update": function (event, ui) { // ドラッグ完了後のコールバック
+          put_result(ui);
+        }
+      });
+
+    });
+  </script>
+
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <!-- <script src="Sortable.min.js"></script> -->
+  <script src="common.js"></script>
+
+  <!-- <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script> -->
-    <!-- <script src="https://unpkg.com/vue"></script> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <!-- <script src="https://unpkg.com/vue"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
     <script src="https://fonts.googleapis.com/css?family=Roboto:100,300,400"></script> -->
-  </body>
+</body>
+
 </html>
