@@ -12,15 +12,15 @@
 // });
 
 
-$(function($) {
-  $('#rater').change(function() {
+$(function ($) {
+  $('#rater').change(function () {
     $('.button').css('background', '#3CB371');
     $('.button').css('color', '#fefefe');
     $('.button').css('pointer-events', 'auto');
   });
 });
-$(function($) {
-  $('.button').on('click', function() {
+$(function ($) {
+  $('.button').on('click', function () {
     $('.button').text('');
     $('.box').css('pointer-events', 'none');
     $('#rater').css('pointer-events', 'none');
@@ -35,7 +35,7 @@ var animateButton = function (e) {
 };
 var classname = document.getElementsByClassName("button");
 for (var i = 0; i < classname.length; i++) {
-  classname[i].addEventListener("click", animateButton, false);  
+  classname[i].addEventListener("click", animateButton, false);
 };
 
 $(function () {
@@ -52,19 +52,20 @@ $(function () {
 });
 
 
-$(function() {
+$(function () {
   function put_result(ui) {
-  $("#result_box").html("現在の要素のIDの順番は下記のとおりです。<br />");
+    $("#result_box").html("現在の要素のIDの順番は下記のとおりです。<br />");
 
-  $("#box").find(".card").each(function (index, element) {
-    var id = $(this).attr("id");
-    $("#result_box").append(id + "<br />");
-  });
+    $("#box").find(".card").each(function (index, element) {
+      var id = $(this).attr("id");
+      $("#result_box").append(id + "<br />");
+    });
 
-  if (ui) { // もしドラッグ後であれば
-    // ドラッグされた要素のIDを取得
-    var dragged_id = ui.item[0].id;
-    $("#result_box").append("ドラッグされた要素のIDは" + dragged_id + "です<br />");
+    if (ui) { // もしドラッグ後であれば
+      // ドラッグされた要素のIDを取得
+      var dragged_id = ui.item[0].id;
+      $("#result_box").append("ドラッグされた要素のIDは" + dragged_id + "です<br />");
+    }
   }
 });
 // $('#datas').sortable({
