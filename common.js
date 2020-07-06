@@ -38,7 +38,18 @@ for (var i = 0; i < classname.length; i++) {
   classname[i].addEventListener("click", animateButton, false);  
 };
 
+$(function () {
+  put_result();
+  $("#box").sortable({
+    placeholder: "ui-state-highlight",
+    axis: "y", // ドラッグの方向を縦に固定
+    "opacity": 0.5, // ドラッグ中の透明度
+    "update": function (event, ui) { // ドラッグ完了後のコールバック
+      put_result(ui);
+    }
+  });
 
+});
 
 // $('#datas').sortable({
 //   update: function(){

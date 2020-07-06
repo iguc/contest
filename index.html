@@ -43,7 +43,7 @@
           <div class="card-body">中井</div>
         </div>
         <div id="box_4" class="card item">
-          <div class="card-body">西村safffq</div>
+          <div class="card-body">qqq西村</div>
         </div>
         <div id="box_5" class="card item">
           <div class="card-body">藤井</div>
@@ -124,18 +124,7 @@
         $("#result_box").append("ドラッグされた要素のIDは" + dragged_id + "です<br />");
       }
     }
-    $(function () {
-      put_result();
-      $("#box").sortable({
-        placeholder: "ui-state-highlight",
-        axis: "y", // ドラッグの方向を縦に固定
-        "opacity": 0.5, // ドラッグ中の透明度
-        "update": function (event, ui) { // ドラッグ完了後のコールバック
-          put_result(ui);
-        }
-      });
 
-    });
   </script>
 
 
