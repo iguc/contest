@@ -33,7 +33,7 @@ p {
 
 }
 
-.sortable-menu {
+.box {
   width: 300px;
   margin: 20px auto;
   padding: 0;
@@ -46,13 +46,13 @@ p {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
-.box card {
+.box item {
   margin: 0;
   padding: 0;
   list-style: none;
   border-top: solid 1px #eee;
 }
-.box card:first-child {
+.box item:first-child {
   border-top: none;
 }
 .box a {
