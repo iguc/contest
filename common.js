@@ -5,11 +5,11 @@
 //   animation: 110, // ミリ秒で指定
 // });
 
-$(function($) {
-  $('.box').on('click', function() {
-    $('.box').css('background', '#edb54c');
-  });
-});
+// $(function($) {
+//   $('.box').on('click', function() {
+//     $('.box').css('background', '#edb54c');
+//   });
+// });
 
 
 $(function($) {
