@@ -64,9 +64,9 @@ p {
   background-color: #fff;
   cursor: n-resize;
 } */
-.box a:hover {
+/* .box:hover {
   background-color: #edb54c;
-}
+} */
 .box .ui-sortable-helper {
   border-top: solid 1px #edb54c;
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
