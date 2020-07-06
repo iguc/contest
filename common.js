@@ -22,7 +22,7 @@ $(function($) {
 $(function($) {
   $('.button').on('click', function() {
     $('.button').text('');
-    $('.list').css('pointer-events', 'none');
+    $('.box').css('pointer-events', 'none');
     $('#rater').css('pointer-events', 'none');
     $('.button').css('pointer-events', 'none');
   });
