@@ -52,7 +52,8 @@ $(function () {
 });
 
 
-$(function put_result(ui) {
+$(function() {
+  function put_result(ui) {
   $("#result_box").html("現在の要素のIDの順番は下記のとおりです。<br />");
 
   $("#box").find(".card").each(function (index, element) {
