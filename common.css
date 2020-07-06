@@ -79,6 +79,7 @@ p {
 
 .placeholder {
   background-color: #edb54c;
+  border: 1px dashed #edb54c;
 }
 
 .sortable-chosen {
