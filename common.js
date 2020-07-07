@@ -25,6 +25,7 @@ $(function ($) {
     $('.box').css('pointer-events', 'none');
     $('#rater').css('pointer-events', 'none');
     $('.button').css('pointer-events', 'none');
+    window.location.href = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?foo=13456qweasd/';
   });
 });
 var animateButton = function (e) {
