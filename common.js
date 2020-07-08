@@ -12,6 +12,7 @@ $(function ($) {
     $('#rater').css('pointer-events', 'none');
     $('.button').css('pointer-events', 'none');
 
+    var iok = 0;
     $("#box").find(".card").each(function (index, element) {
       var id = $(this).attr("id");
       if(id == "box_1") iok = index + 1;
