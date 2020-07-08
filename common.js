@@ -26,9 +26,31 @@ $(function ($) {
     $('#rater').css('pointer-events', 'none');
     $('.button').css('pointer-events', 'none');
 
+    $("#box").find(".card").each(function (index, element) {
+      switch($(this).attr("id")) {
+        case "box_1":
+          iok = index + 1;
+          break;
+        case "box_2":
+          kmt = index + 1;
+          break;
+        case "box_3":
+          nki = index + 1;
+          break;
+        case "box_4":
+          nsm = index + 1;
+          break;
+        case "box_5":
+          fji = index + 1;
+          break;
+        case "box_6":
+          msm = index + 1;
+          break;
+      }
+
     var request = new XMLHttpRequest();
     request.open("GET", 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?rater='
-      + null + '&iok=' + null + '&kmt=' + null + '&nki=' + null + '&nsm=' + null + '&fji=' + null + '&msm=' + null
+      + null + '&iok=' + iok + '&kmt=' + kmt + '&nki=' + nki + '&nsm=' + nsm + '&fji=' + fji + '&msm=' + msm
     , true);
     request.send();
 
