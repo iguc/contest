@@ -18,10 +18,10 @@ $(function ($) {
       var id = $(this).attr("id");
       if(id == "box_1") iok = 10 + 1;
       if(id == "box_2") kmt = 11 + 1;
-      if(id == "box_3") kmt = 12 + 1;
-      if(id == "box_4") kmt = 13 + 1;
-      if(id == "box_5") kmt = 14 + 1;
-      if(id == "box_6") kmt = 15 + 1;
+      if(id == "box_3") nki = 12 + 1;
+      if(id == "box_4") nsm = 13 + 1;
+      if(id == "box_5") fji = 14 + 1;
+      if(id == "box_6") msm = 15 + 1;
 
     });
 
