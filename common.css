@@ -1,6 +1,5 @@
 body {
   background-color: #eff0f2;
-  /* color: #546775; */
   color: #080808;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
@@ -32,56 +31,10 @@ p {
   cursor: move;
 
 }
-
-/* .box {
-  width: 300px;
-  margin: 20px auto;
-  padding: 0;
-  background-color: #ccc;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  overflow: hidden;
-  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-}
-.box item {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-top: solid 1px #eee;
-}
-.box item:first-child {
-  border-top: none;
-}
-.box a {
-  display: block;
-  line-height: 40px;
-  padding: 0 10px;
-  text-decoration: none;
-  color: #333;
-  background-color: #fff;
-  cursor: n-resize;
-} */
-/* .box:hover {
-  background-color: #edb54c;
-} */
-/* .box .ui-sortable-helper {
-  border-top: solid 1px #edb54c;
-  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-} */
-
 .placeholder {
   background-color: red;
   border: 1px dashed red;
 }
-
 .sortable-chosen {
   color: #fff;
   background-color: #edb54c;
@@ -93,25 +46,17 @@ p {
   overflow:hidden;
   width:30px;
   height:8.4em;
-  /* display: inline-block; */
   display: table-cell;
 }
 .list {
-  
-  /* display: inline-block; */
   display: table-cell;
 }
 .box {
   display: table-cell;
-
-
 }
 .cp_ipselect {
-  
   overflow: hidden;
   width: 250px;
-	/* width: 90%; */
-	/* margin: 2em auto; */
 	text-align: center;
 }
 .cp_ipselect select {
@@ -132,7 +77,6 @@ p {
     display: none;
 }
 .cp_ipselect.cp_sl02 {
-  /* font-size: 20px; */
 	position: relative;
 	border: 1px solid #bbbbbb;
 	border-radius: 2px;
@@ -164,28 +108,10 @@ p {
 	padding: 8px 38px 8px 8px;
 	color: #666666;
 }
-
 @import url(https://fonts.googleapis.com/css?family=Space+Mono);
 * {
   box-sizing: border-box;
 }
-
-/* body {
-  padding: 10px;
-  font-size: 16px;
-  font-family: 'Space Mono', sans-serif;
-  text-align: center;
-  background-color: #eaf0ff;
-  color: #002868;
-}
-
-h1 {
-  font-size: 1.5em;
-}
-
-small {
-  color: #888;
-} */
 
 @media (min-width: 780px) {
   .wrapper {
