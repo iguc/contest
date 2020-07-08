@@ -25,7 +25,10 @@ $(function ($) {
     $('.box').css('pointer-events', 'none');
     $('#rater').css('pointer-events', 'none');
     $('.button').css('pointer-events', 'none');
-    new XMLHttpRequest().open("GET", 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?foo=13456qweasd/', true);
+
+    var request = new XMLHttpRequest();
+    request.open("GET", 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?foo=13456qweasd/', true);
+    request.send();
 
    //window.location.href = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?foo=13456qweasd/';
   });
