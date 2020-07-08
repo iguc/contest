@@ -26,12 +26,8 @@ $(function ($) {
     $('#rater').css('pointer-events', 'none');
     $('.button').css('pointer-events', 'none');
 
-    
-
     var request = new XMLHttpRequest();
-    request.open("GET", 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?rater='
-      + null + '&iok=' + null + '&kmt=' + null + '&nki=' + null + '&nsm=' + null + '&fji=' + null + '&msm=' + null
-    , true);
+    request.open("GET", 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?foo=13456qweasd/', true);
     request.send();
 
    //window.location.href = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?foo=13456qweasd/';
