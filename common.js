@@ -16,7 +16,9 @@ $(function ($) {
     var kmt = 0;
     $("#box").find(".card").each(function (index, element) {
       var id = $(this).attr("id");
-      if(id == "box_1") iok = index;
+      var num = 0;
+      num = index;
+      if(id == "box_1") iok = num;
       if(id == "box_2") kmt = 11 + 1;
       if(id == "box_3") nki = 12 + 1;
       if(id == "box_4") nsm = 13 + 1;
