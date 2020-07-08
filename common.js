@@ -27,10 +27,10 @@ $(function ($) {
     var request = new XMLHttpRequest();
     var url = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db';
     var append = '?rater=' + $('#rater option:selected').val() + '&iok=' + iok + '&kmt=' + kmt + '&nki=' + nki + '&nsm=' + nsm + '&fji=' + fji + '&msm=' + msm;
-    // request.open("GET", url + append, true);
-    // request.send();
+    request.open("GET", url + append, true);
+    request.send();
 
-   window.location.href = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db' + append;
+   //window.location.href = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db' + append;
   });
 });
 var animateButton = function (e) {
