@@ -14,7 +14,7 @@ $(function ($) {
 
     var request = new XMLHttpRequest();
     var url = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db';
-    var append = '?rater=' + document.getElementById("rater").nodeValue;
+    var append = '?rater=' + $('[name=rater]').val();
     // request.open("GET", url + append, true);
     // request.send();
 
