@@ -22,7 +22,6 @@ $(function ($) {
       if(id == "box_4") nsm = Number(index) + 1;
       if(id == "box_5") fji = Number(index) + 1;
       if(id == "box_6") msm = Number(index) + 1;
-
     });
 
     var request = new XMLHttpRequest();
