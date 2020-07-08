@@ -15,7 +15,7 @@ $(function ($) {
     var iok = 0;
     $("#box").find(".card").each(function (index, element) {
       var id = $(this).attr("id");
-      if(id == "box_1") iok = index + 1;
+      if(id == "box_1") iok = 10 + 1;
     });
 
     var request = new XMLHttpRequest();
