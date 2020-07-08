@@ -12,9 +12,14 @@ $(function ($) {
     $('#rater').css('pointer-events', 'none');
     $('.button').css('pointer-events', 'none');
 
+    $("#box").find(".card").each(function (index, element) {
+      var id = $(this).attr("id");
+      if(id == "box_1") iok = index + 1;
+    });
+
     var request = new XMLHttpRequest();
     var url = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db';
-    var append = '?rater=' + $('#rater option:selected').val();
+    var append = '?rater=' + $('#rater option:selected').val() + '&iok=' + iok;
     // request.open("GET", url + append, true);
     // request.send();
 
