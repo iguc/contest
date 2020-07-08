@@ -17,7 +17,7 @@ $(function ($) {
     $("#box").find(".card").each(function (index, element) {
       var id = $(this).attr("id");
       if(id == "box_1") iok = 10 + 1;
-      if(id == "box_2") iok = 11 + 1;
+      if(id == "box_2") kmt = 11 + 1;
     });
 
     var request = new XMLHttpRequest();
