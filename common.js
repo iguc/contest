@@ -16,15 +16,12 @@ $(function ($) {
     var kmt = 0;
     $("#box").find(".card").each(function (index, element) {
       var id = $(this).attr("id");
-      
-      alert(index + 50);
-
-      if(id == "box_1") iok = num;
-      if(id == "box_2") kmt = 11 + 1;
-      if(id == "box_3") nki = 12 + 1;
-      if(id == "box_4") nsm = 13 + 1;
-      if(id == "box_5") fji = 14 + 1;
-      if(id == "box_6") msm = 15 + 1;
+      if(id == "box_1") iok = Number(index) + 1;
+      if(id == "box_2") kmt = Number(index) + 1;
+      if(id == "box_3") nki = Number(index) + 1;
+      if(id == "box_4") nsm = Number(index) + 1;
+      if(id == "box_5") fji = Number(index) + 1;
+      if(id == "box_6") msm = Number(index) + 1;
 
     });
 
