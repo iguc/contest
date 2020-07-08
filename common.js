@@ -50,7 +50,7 @@ $(function ($) {
 
     var request = new XMLHttpRequest();
     request.open("GET", 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?rater='
-      + null + '&iok=' + iok + '&kmt=' + kmt + '&nki=' + nki + '&nsm=' + nsm + '&fji=' + fji + '&msm=' + msm
+      + null + '&iok=' + iok + '&kmt=' + kmt + '&nki=' + nki + '&nsm=' + nsm + '&fji=' + fji + '&msm=' + m
     , true);
     request.send();
 
@@ -78,25 +78,26 @@ $(function () {
       put_result(ui);
     }
   });
+
 });
 
 
 
-function put_result(ui) {
-  $("#result_box").html("現在の要素のIDの順番は下記のとおりです。<br />");
+  function put_result(ui) {
+    $("#result_box").html("現在の要素のIDの順番は下記のとおりです。<br />");
 
-  $("#box").find(".card").each(function (index, element) {
-    var id = $(this).attr("id");
-    $("#result_box").append(id + "<br />");
-  });
+    $("#box").find(".card").each(function (index, element) {
+      var id = $(this).attr("id");
+      $("#result_box").append(id + "<br />");
+    });
 
-  // if (ui) { // もしドラッグ後であれば
-  //   // ドラッグされた要素のIDを取得
-  //   var dragged_id = ui.item[0].id;
-  //   $("#result_box").append("ドラッグされた要素のIDは" + dragged_id + "です<br />");
-  // }
-  };
-});
+    if (ui) { // もしドラッグ後であれば
+      // ドラッグされた要素のIDを取得
+      var dragged_id = ui.item[0].id;
+      $("#result_box").append("ドラッグされた要素のIDは" + dragged_id + "です<br />");
+    }
+  }
+
 // $('#datas').sortable({
 //   update: function(){
 //       var log = $(this).sortable("toArray");
