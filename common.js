@@ -13,10 +13,12 @@ $(function ($) {
     $('.button').css('pointer-events', 'none');
 
     var request = new XMLHttpRequest();
-    request.open("GET", 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?foo=13456qweasd/', true);
-    request.send();
+    var url = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db';
+    var append = '?rater=' + document.getElementById("rater").nodeValue;
+    // request.open("GET", url + append, true);
+    // request.send();
 
-   //window.location.href = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db?foo=13456qweasd/';
+   window.location.href = 'https://9ai1mdy8fi.execute-api.ap-northeast-1.amazonaws.com/db' + append;
   });
 });
 var animateButton = function (e) {
