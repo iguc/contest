@@ -53,6 +53,7 @@ p {
 }
 .box {
   display: table-cell;
+  text-align: center;
 }
 #box_4 {
   background: url(cat.png);
