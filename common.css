@@ -1,5 +1,4 @@
 body {
-  background: url()
   background-color: #eff0f2;
   color: #080808;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
@@ -54,6 +53,10 @@ p {
 }
 .box {
   display: table-cell;
+}
+#box_4 {
+  background: url(cat.png);
+  background-size: contain;
 }
 .cp_ipselect {
   overflow: hidden;
